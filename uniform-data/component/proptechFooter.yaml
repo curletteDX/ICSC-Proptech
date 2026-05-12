@@ -1,0 +1,44 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: proptechFooter
+name: Proptech Footer
+icon: screen
+parameters:
+  - id: logo
+    name: Logo
+    type: asset
+    guidance: Company logo image
+    typeConfig:
+      allowedTypes:
+        - image
+  - id: description
+    name: Description
+    type: text
+    guidance: Company/organization description paragraph
+    localizable: true
+  - id: websiteUrl
+    name: Website URL
+    type: link
+    guidance: Main website link
+  - id: socialLinks
+    name: Social Links
+    type: json
+    guidance: Array of social media links with platform name and URL
+    typeConfig:
+      schema:
+        type: array
+        items:
+          type: object
+          properties:
+            url:
+              type: string
+            platform:
+              type: string
+description: Site footer with logo, social links, and company description
+useTeamPermissions: true
+slots: []
+titleParameter: description
+thumbnailParameter: logo
+canBeComposition: false
+created: '2026-05-12T09:13:50.919551+00:00'
+updated: '2026-05-12T09:13:50.919551+00:00'

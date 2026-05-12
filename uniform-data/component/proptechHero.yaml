@@ -1,0 +1,56 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: proptechHero
+name: Proptech Hero
+icon: screen
+parameters:
+  - id: title
+    name: Title
+    type: text
+    guidance: Main title text, typically 'ICSC'
+    localizable: true
+  - id: subtitle
+    name: Subtitle
+    type: text
+    guidance: Subtitle text, typically '+PROPTECH'
+    localizable: true
+  - id: date
+    name: Date
+    type: text
+    guidance: Event date in format 'MAY 18 – 20, 2026'
+    localizable: true
+  - id: location
+    name: Location
+    type: text
+    guidance: Event location, e.g. 'LAS VEGAS, NEVADA'
+    localizable: true
+  - id: description
+    name: Description
+    type: text
+    guidance: Brief description of the event, 1-2 sentences
+    localizable: true
+  - id: ctaText
+    name: CTA Text
+    type: text
+    guidance: Call-to-action button text, e.g. 'REGISTER NOW'
+    localizable: true
+  - id: ctaLink
+    name: CTA Link
+    type: link
+    guidance: URL for the registration button
+  - id: video
+    name: Video
+    type: asset
+    guidance: Background video for the hero section
+    typeConfig:
+      allowedTypes:
+        - video
+description: >-
+  Hero section for ICSC+PROPTECH landing page with video background, rotating
+  arcs, and call-to-action
+useTeamPermissions: true
+slots: []
+titleParameter: title
+canBeComposition: false
+created: '2026-05-12T09:13:23.154729+00:00'
+updated: '2026-05-12T09:13:23.154729+00:00'

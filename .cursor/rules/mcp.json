@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "Uniform": {
+      "type": "streamable-http",
+      "url": "https://ai.uniform.global/projects/da161258-58e9-4cac-8d8b-ec165f4300be/mcp",
+      "headers": {
+        "x-api-key": "uf1cl83yv6t6qrsnj8qas6373ll3c3nuvku35jq04qjfc79rxgyx2fx6uun3lf4wgg7guya90ydy6qmj7hddjjsdf2e0hyzc3"
+      }
+    }
+  }
+}

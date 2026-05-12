@@ -1,0 +1,43 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: scheduleSection
+name: Schedule Section
+icon: screen
+parameters:
+  - id: scheduleData
+    name: Schedule Data
+    type: json
+    guidance: Array of day schedules with day, date, highlight flag, and events array
+    typeConfig:
+      schema:
+        type: array
+        items:
+          type: object
+          properties:
+            day:
+              type: string
+            date:
+              type: string
+            events:
+              type: array
+              items:
+                type: object
+                properties:
+                  link:
+                    type: string
+                  title:
+                    type: string
+                  linkText:
+                    type: string
+                  location:
+                    type: string
+                  description:
+                    type: string
+            highlight:
+              type: boolean
+description: Event schedule with day-by-day breakdown of activities
+useTeamPermissions: true
+slots: []
+canBeComposition: false
+created: '2026-05-12T09:13:40.100746+00:00'
+updated: '2026-05-12T09:13:40.100746+00:00'

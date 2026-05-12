@@ -1,0 +1,31 @@
+composition:
+  _name: Proptech
+  _id: 6b184a14-6873-414a-84fa-984aa462e0ef
+  type: page
+  slots:
+    content:
+      - _id: 4f6fe540-eb0a-4144-9a85-0718c99880cb
+        type: proptechHero
+      - _id: 72f764a5-eb7c-4f8f-a47b-1639a31d8462
+        type: statsSection
+      - _id: 25d57490-3ac0-46a1-847b-f0ee3c5574b8
+        type: whyAttendSection
+      - _id: 669d8c44-6db1-4417-92c4-907e82ab4290
+        type: speakersSection
+      - _id: 1725d2a3-8ec6-404f-8a47-0ec04ce98d8c
+        type: scheduleSection
+      - _id: 54800308-9499-4c37-b1c3-ceb43bafe16d
+        type: sponsorSection
+      - _id: 9a453e54-5ce2-4ded-a395-530791cd0fc7
+        type: faqSection
+      - _id: 4dafb3a6-352e-49c3-8f9d-3ed5a54e27b5
+        type: bannerCta
+      - _id: aea96294-b626-44ad-aa0f-341404d2f2fd
+        type: proptechFooter
+  _overridability:
+    hideLockedParameters: true
+  _locales:
+    - en-US
+created: '2026-05-12T09:28:05.175553+00:00'
+modified: '2026-05-12T09:28:05.175553+00:00'
+pattern: false

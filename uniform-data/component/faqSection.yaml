@@ -1,0 +1,50 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: faqSection
+name: FAQ Section
+icon: screen
+parameters:
+  - id: title
+    name: Title
+    type: text
+    guidance: First part of section title, e.g. 'EVENT'
+    localizable: true
+  - id: subtitle
+    name: Subtitle
+    type: text
+    guidance: Bold part of section title, e.g. 'FAQs'
+    localizable: true
+  - id: description
+    name: Description
+    type: text
+    guidance: Introduction text for the FAQ section
+    localizable: true
+  - id: contactName
+    name: Contact Name
+    type: text
+    guidance: Name of contact person for more info
+  - id: contactEmail
+    name: Contact Email
+    type: text
+    guidance: Email address for inquiries
+  - id: faqs
+    name: FAQs
+    type: json
+    guidance: Array of FAQ objects with question and answer fields
+    typeConfig:
+      schema:
+        type: array
+        items:
+          type: object
+          properties:
+            answer:
+              type: string
+            question:
+              type: string
+description: Frequently asked questions accordion section
+useTeamPermissions: true
+slots: []
+titleParameter: title
+canBeComposition: false
+created: '2026-05-12T09:13:43.215377+00:00'
+updated: '2026-05-12T09:13:43.215377+00:00'

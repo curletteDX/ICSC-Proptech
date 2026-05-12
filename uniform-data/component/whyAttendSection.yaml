@@ -1,0 +1,34 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: whyAttendSection
+name: Why Attend Section
+icon: screen
+parameters:
+  - id: title
+    name: Title
+    type: text
+    guidance: First part of the title, typically 'WHY'
+    localizable: true
+  - id: subtitle
+    name: Subtitle
+    type: text
+    guidance: Bold part of the title, typically 'ATTEND'
+    localizable: true
+  - id: description
+    name: Description
+    type: text
+    guidance: Paragraph describing why to attend, 2-3 sentences
+    localizable: true
+description: Feature circles section explaining reasons to attend the event
+useTeamPermissions: true
+slots:
+  - id: bubbles
+    name: Bubbles
+    allowedComponents:
+      - featureBubble
+    minComponents: 0
+    maxComponents: 3
+titleParameter: title
+canBeComposition: false
+created: '2026-05-12T09:13:33.759876+00:00'
+updated: '2026-05-12T09:13:33.759876+00:00'

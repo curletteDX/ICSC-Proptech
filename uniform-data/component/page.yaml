@@ -1,0 +1,39 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: page
+name: Page
+icon: file-document
+parameters:
+  - id: metaTitle
+    name: Meta Title
+    type: text
+    typeConfig:
+      required: false
+    localizable: true
+useTeamPermissions: true
+slots:
+  - id: content
+    name: Content
+    allowedComponents:
+      - hero
+      - proptechHero
+      - statsSection
+      - whyAttendSection
+      - speakersSection
+      - scheduleSection
+      - faqSection
+      - bannerCta
+      - proptechFooter
+      - sponsorSection
+      - $personalization
+      - $test
+      - $localization
+    inheritAllowedComponents: false
+slugSettings:
+  unique: global
+  required: 'yes'
+  regularExpression: ''
+  regularExpressionMessage: ''
+canBeComposition: true
+created: '2026-05-12T08:52:09.601045+00:00'
+updated: '2026-05-12T09:14:10.950638+00:00'

@@ -1,0 +1,48 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: sponsorSection
+name: Sponsor Section
+icon: screen
+parameters:
+  - id: title
+    name: Title
+    type: text
+    guidance: Section title
+    localizable: true
+  - id: subtitle
+    name: Subtitle
+    type: text
+    guidance: Section subtitle
+    localizable: true
+  - id: sponsors
+    name: Sponsors
+    type: json
+    guidance: >-
+      Object with sponsor tiers (premier, platinum, gold, silver) each
+      containing array of sponsors
+    typeConfig:
+      schema:
+        type: object
+        properties:
+          gold:
+            type: array
+          silver:
+            type: array
+          premier:
+            type: array
+            items:
+              type: object
+              properties:
+                logo:
+                  type: string
+                name:
+                  type: string
+          platinum:
+            type: array
+description: Sponsor showcase with tabbed tiers
+useTeamPermissions: true
+slots: []
+titleParameter: title
+canBeComposition: false
+created: '2026-05-12T09:13:53.488156+00:00'
+updated: '2026-05-12T09:13:53.488156+00:00'

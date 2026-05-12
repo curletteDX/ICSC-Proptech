@@ -1,0 +1,55 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: speakersSection
+name: Speakers Section
+icon: screen
+parameters:
+  - id: title
+    name: Title
+    type: text
+    guidance: Section title, typically 'SPEAKERS'
+    localizable: true
+  - id: subtitle
+    name: Subtitle
+    type: text
+    guidance: Descriptive headline about the speakers
+    localizable: true
+  - id: description
+    name: Description
+    type: text
+    guidance: Brief description of the speaker program
+    localizable: true
+  - id: keynoteSpeaker
+    name: Keynote Speaker
+    type: text
+    guidance: Name of the featured keynote speaker
+    localizable: true
+  - id: keynoteLabel
+    name: Keynote Label
+    type: text
+    guidance: Label above speaker name, e.g. 'KEYNOTE'
+    localizable: true
+  - id: speakerImage
+    name: Speaker Image
+    type: asset
+    guidance: Photo of the featured speaker
+    typeConfig:
+      allowedTypes:
+        - image
+  - id: ctaText
+    name: CTA Text
+    type: text
+    guidance: Button text, e.g. 'MEET ALL SPEAKERS'
+    localizable: true
+  - id: ctaLink
+    name: CTA Link
+    type: link
+    guidance: URL for the speakers button
+description: Featured speakers showcase with keynote speaker highlight
+useTeamPermissions: true
+slots: []
+titleParameter: title
+thumbnailParameter: speakerImage
+canBeComposition: false
+created: '2026-05-12T09:13:37.853493+00:00'
+updated: '2026-05-12T09:13:37.853493+00:00'

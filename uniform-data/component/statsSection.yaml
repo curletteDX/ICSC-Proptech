@@ -1,0 +1,48 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: statsSection
+name: Stats Section
+icon: screen
+parameters:
+  - id: title
+    name: Title
+    type: text
+    guidance: Section title, e.g. 'ICSC LAS VEGAS'
+    localizable: true
+  - id: statsData
+    name: Stats Data
+    type: json
+    guidance: Array of stats objects with value, suffix, and label
+    typeConfig:
+      schema:
+        type: array
+        items:
+          type: object
+          properties:
+            label:
+              type: string
+            value:
+              type: number
+            suffix:
+              type: string
+  - id: footnote
+    name: Footnote
+    type: text
+    guidance: Explanatory text below the stats
+    localizable: true
+  - id: learnMoreLink
+    name: Learn More Link
+    type: link
+    guidance: Link to learn more
+  - id: learnMoreText
+    name: Learn More Text
+    type: text
+    guidance: Text for the learn more link
+    localizable: true
+description: Statistics display section with animated counters showing event metrics
+useTeamPermissions: true
+slots: []
+titleParameter: title
+canBeComposition: false
+created: '2026-05-12T09:13:30.477431+00:00'
+updated: '2026-05-12T09:13:30.477431+00:00'

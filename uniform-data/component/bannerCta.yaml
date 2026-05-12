@@ -1,0 +1,51 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: bannerCta
+name: Banner CTA
+icon: screen
+parameters:
+  - id: title
+    name: Title
+    type: text
+    guidance: Light weight text, e.g. 'DISCOVER THE'
+    localizable: true
+  - id: titleBold
+    name: Title Bold
+    type: text
+    guidance: Bold emphasized text, e.g. 'TECHNOLOGY TRANSFORMING'
+    localizable: true
+  - id: subtitle
+    name: Subtitle
+    type: text
+    guidance: Additional headline text
+    localizable: true
+  - id: ctaText
+    name: CTA Text
+    type: text
+    guidance: Button text, e.g. 'REGISTER NOW'
+    localizable: true
+  - id: ctaLink
+    name: CTA Link
+    type: link
+    guidance: URL for the CTA button
+  - id: footnote
+    name: Footnote
+    type: text
+    guidance: Small print text below the CTA
+    localizable: true
+  - id: footnoteLink
+    name: Footnote Link
+    type: link
+    guidance: Link in the footnote
+  - id: footnoteLinkText
+    name: Footnote Link Text
+    type: text
+    guidance: Text for the footnote link
+    localizable: true
+description: Full-width call-to-action banner with bold messaging
+useTeamPermissions: true
+slots: []
+titleParameter: title
+canBeComposition: false
+created: '2026-05-12T09:13:48.291784+00:00'
+updated: '2026-05-12T09:13:48.291784+00:00'

@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: featureBubble
+name: Feature Bubble
+icon: screen
+parameters:
+  - id: icon
+    name: Icon
+    type: asset
+    guidance: Icon image for the feature bubble
+    typeConfig:
+      allowedTypes:
+        - image
+  - id: heading
+    name: Heading
+    type: text
+    guidance: Title for the feature bubble
+    localizable: true
+  - id: text
+    name: Text
+    type: text
+    guidance: Description text for the feature bubble
+    localizable: true
+description: A circular feature bubble with icon, heading, and description text
+useTeamPermissions: true
+slots: []
+titleParameter: heading
+canBeComposition: false

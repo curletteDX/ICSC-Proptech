@@ -1,0 +1,8 @@
+export { HeroSection } from './hero-section'
+export { StatsSection } from './stats-section'
+export { WhyAttendSection } from './why-attend-section'
+export { SpeakersSection } from './speakers-section'
+export { ScheduleSection } from './schedule-section'
+export { FAQSection } from './faq-section'
+export { BannerCTA } from './banner-cta'
+export { ProptechFooter } from './proptech-footer'
